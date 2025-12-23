@@ -111,3 +111,90 @@ This repository prioritizes **clarity over speed**, **depth over hype**, and **c
 Learning is not linear—and that’s okay.
 
 ---
+
+# Day 002 / ∞ — Learning Cycle (C++)
+
+## Overview
+
+Today I focused on **reinforcement and understanding**, not speed.
+Instead of jumping ahead, I revisited yesterday’s concepts using **active recall**, consulted experienced friends on effective learning strategies, and grounded my progress with a short assessment.
+
+---
+
+## Learning Approach
+
+* Practiced **active recall** of C++ basics (no notes, no tutorials)
+* Sought guidance on *how to learn C++ properly*
+* Identified a core reference book used by many professionals
+
+### Recommended Resource
+
+ **Programming: Principles and Practice Using C++** — *Bjarne Stroustrup*
+
+* Intended version: **5th Edition**
+* Currently using: **3rd Edition** (principles remain solid)
+
+---
+
+## First C++ Program
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    cout << "Hello World";
+    return 0;
+}
+```
+**using namespace alternative:**
+```using namespace alternative:
+  #include <iostream>
+
+ int main() {
+   std::cout << "Hello World";
+   return 0;
+}
+```
+### Code Explanation
+
+* **`#include <iostream>`**
+  Imports the standard input/output stream library, enabling input and output operations.
+
+* **`using namespace std;`**
+  Allows access to standard library features (like `cout`) without prefixing them with `std::`.
+
+* **`int main()`**
+  The entry point of every C++ program. Execution starts here.
+
+* **`cout << "Hello World";`**
+  Outputs text to the console using the insertion (`<<`) operator.
+
+* **`return 0;`**
+  Signals successful execution to the operating system.
+
+---
+
+## Knowledge Check
+
+ **W3Schools — C++ Introduction Test**
+
+* **Score:** **64%**
+
+This highlighted:
+
+* Solid grasp of basic syntax
+* Gaps in foundational concepts
+* Clear direction for improvement
+
+---
+
+## Key Takeaways
+
+* Active recall reveals gaps faster than passive learning
+* Simple programs carry deep foundational concepts
+* Early testing prevents false confidence
+* Progress is real, even when imperfect
+
+---
+
