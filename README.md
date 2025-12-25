@@ -250,3 +250,95 @@ Day 3 done.
 _get readyto be pissed by my knowledge_
 ---
 
+# Day 004 / ∞ — Data Types in C++
+
+## Overview
+
+Day 4 focused on understanding **data types in C++**.
+Instead of just memorizing syntax, I explored how data types are categorized, why they exist, and how they affect memory and program behavior.
+
+The primary reference for today was **GeeksforGeeks**, which provided a clear structural breakdown and additional links for deeper reading.
+
+---
+
+## C++ Data Types
+
+C++ data types are broadly grouped into **three categories**:
+
+### 1. Fundamental (Built-in) Data Types
+
+These are the basic data types provided directly by the language.
+
+Examples include:
+
+* `int`
+* `float`
+* `double`
+* `char`
+* `bool`
+* `void`
+
+They form the foundation of all other data representations in C++.
+
+---
+
+### 2. Derived Data Types
+
+These are derived from fundamental data types and allow more complex data handling.
+
+Examples include:
+
+* Arrays
+* Pointers
+* References
+* Functions
+
+This category started revealing how C++ gives programmers low-level control over memory and behavior.
+
+---
+
+### 3. User-Defined Data Types
+
+These allow programmers to create custom data structures tailored to specific problems.
+
+Examples include:
+
+* `struct`
+* `union`
+* `enum`
+* `typedef`
+
+This category hinted at how abstraction is built on top of basic types.
+
+---
+
+## Learning Experience
+
+While GeeksforGeeks explained the main categories clearly, the **additional links in the notes led to more advanced and unfamiliar concepts**.
+Topics such as memory layout, type modifiers, and internal representations came up earlier than expected.
+
+This led to some confusion, but also clarity about where my current understanding ends.
+
+Instead of forcing comprehension, I noted the concepts and moved on, knowing they will make more sense with time and practice.
+
+---
+
+## Key Takeaways
+
+* Data types define how data is stored, interpreted, and manipulated
+* C++ offers strong control over memory through its type system
+* Not everything needs to be understood immediately
+
+---
+
+## References
+
+* GeeksforGeeks — C++ Data Types
+  [https://www.geeksforgeeks.org/cpp-data-types/](https://www.geeksforgeeks.org/cpp-data-types/)
+
+---
+
+## Status
+
+Day 4 done & merry Christmas lads
+
