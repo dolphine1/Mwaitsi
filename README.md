@@ -198,3 +198,55 @@ This highlighted:
 
 ---
 
+# Day 3/∞ — From Code to Execution (and Curiosity)
+
+I started with execution and ended with curiosity taking over.
+
+I focused on compiling and running C++ code directly from the VS Code terminal. Instead of relying on editor shortcuts, I wanted to understand what actually happens between writing code and seeing output.
+
+I compiled my program using `g++`, explicitly naming the executable:
+
+```bash
+g++ filename.cpp -o executablename
+```
+
+Then I ran it with:
+
+```bash
+./executablename
+```
+
+Seeing the program run this way made the process feel concrete. Source code became an executable. The abstraction faded.
+
+While reviewing the same “Hello World” program, curiosity got the better of me. I started reading explanations on GeeksforGeeks about how a C++ program actually works. That sent me down a rabbit hole.
+
+One question led to another.
+
+That’s how I ended up learning about preprocessors, header files, and what really happens before compilation. I finally understood why `#include` isn’t just a line of code, but a directive handled before the compiler even starts its real work.
+
+This also led me to understand the difference between `iostream` and `stdio`. One belongs to C++ streams, the other to C-style input and output. Same goal, very different design philosophies.
+
+Along the way, I was introduced to macros, their purpose, and why they should be used carefully. I didn’t master them, but I now understand why they exist.
+
+Instead of skimming, I decided to go line by line through the program:-from the header file at the top to the final closing curly bracket. For the first time, I wasn’t just memorizing syntax. I was asking why each line exists.(an appreciation to geeks for geeks on their resources)
+_Ps i just now know that the alt for the ```using namespace std```is the best practice not as what i had in mind initially_
+
+That shift felt important and the feeling was great.
+
+I also came across an immense amount of high-quality learning material on Substack. One resource that stood out was a C/C++ bootcamp series that provides a roadmap curated with youtube videos on core concepts together with tools and resources necessary:
+
+[https://open.substack.com/pub/jprahman/p/cc-bootcamp?utm_campaign=post-expanded-share&utm_medium=web](https://open.substack.com/pub/jprahman/p/cc-bootcamp?utm_campaign=post-expanded-share&utm_medium=web)
+
+## Takeaways
+
+Running code manually builds confidence.
+Curiosity leads to deeper understanding than structured plans alone.
+Knowing the “why” behind each line changes how code feels.
+Fundamentals reveal more the longer you sit with them.
+
+Today reminded me that learning isn’t always linear. Sometimes the best progress happens when you follow a question all the way down.
+
+Day 3 done.
+_get readyto be pissed by my knowledge_
+---
+
