@@ -455,9 +455,17 @@ Void pointers are powerful but dangerous if misused. They’re common in low-lev
 `void` can also signal intentional non-use of a variable.
 
 ```cpp
-void myFunction(int importantData, int uselessData) {
+#include <iostream>
+using namespace std;
+
+void myFunction(int importantData, int uselessData)
+{
     (void)uselessData;
     cout << importantData << endl;
+}
+int main() {
+    myFunction(100, 0); // Calling function with two numbers
+    return 0;
 }
 ```
 
