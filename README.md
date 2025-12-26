@@ -342,3 +342,148 @@ Instead of forcing comprehension, I noted the concepts and moved on, knowing the
 
 Day 4 done & merry Christmas lads
 
+---
+# Day 005 / ∞ — Active Recall, Functions, and `endl` vs `\n`
+
+## Overview
+
+Day 5 has been anchored in **active recall and code review**, with curiosity driving the learning forward. While revisiting identifiers, I encountered functions and classes in example code, which led me down a deeper path—particularly around functions, `void`, and output formatting.
+
+This wasn’t a detour. It was a necessary pause to understand *why* things work the way they do.
+
+---
+
+## `endl` vs `\n`
+
+While reviewing function examples, I noticed the use of `std::endl` and wondered how it differed from `\n`.
+
+* `\n` inserts a newline character.
+* `std::endl` inserts a newline **and flushes the output buffer**.
+
+Because flushing is an expensive operation, `\n` is generally faster and preferred unless an immediate flush is required (e.g., debugging or real-time output).
+
+This explained why `endl` exists—and why it should be used sparingly. There's a whole lot comparison 
+
+checkout:[https://www.geeksforgeeks.org/cpp/endl-vs-n-in-cpp/]
+
+---
+
+## Understanding Functions
+
+I came across a definition that stuck with me:
+
+> Functions are actions or verbs in code used to solve problems.by Mr David Mahlan cs50
+
+Technically, functions are **reusable blocks of code** designed to perform a specific task. They:
+
+* Improve modularity
+* Reduce repetition
+* Narrow and organize logic
+
+My current understanding is still shallow, but it’s forming.
+
+### Simple Function Example
+
+```cpp
+#include <iostream>
+
+void hi() {
+    std::cout << "greetings beloved" << std::endl;
+}
+
+int main() {
+    hi();
+    return 0;
+}
+```
+
+Here, `hi()` performs an action without returning a value. That led me to explore `void` in depth.
+
+---
+
+## Deep Dive: `void` in C++
+
+### 1. Void Functions — “Action Functions”
+
+A `void` function performs an action but does not return a value.
+its basically nothing or empty
+
+```cpp
+#include <iostream>
+using namespace std;
+
+void sayHi() {
+    cout << "Hello there!" << endl;
+}
+
+int main() {
+    sayHi();
+    return 0;
+}
+```
+
+Use `void` when the goal is *doing something* (printing, saving, triggering behavior) rather than calculating a result.
+
+---
+
+### 2. Void Pointers — The “Mystery Box”
+
+A `void*` can hold the address of any data type, but it doesn’t know what that type is until explicitly told.
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main() {
+    int secretCode = 1234;
+    void* ptr = &secretCode;
+
+    // Must cast before dereferencing
+    int* intPtr = (int*)ptr;
+    cout << *intPtr << endl;
+
+    return 0;
+}
+```
+
+Void pointers are powerful but dangerous if misused. They’re common in low-level or generic programming.
+
+---
+
+### 3. Silencing Unused Parameter Warnings
+
+`void` can also signal intentional non-use of a variable.
+
+```cpp
+void myFunction(int importantData, int uselessData) {
+    (void)uselessData;
+    cout << importantData << endl;
+}
+```
+
+This tells the compiler the variable was ignored on purpose.
+
+---
+
+## Additional Learning
+
+I also enrolled in a course on **Saylor Academy**, which will take roughly **40 hours** and begins tomorrow. I’m hoping this next phase will bring more structure and depth to my learning.
+
+---
+
+## Key Takeaways
+
+* `\n` is faster than `endl` because it avoids flushing
+* Functions improve modularity and clarity
+* `void` is used when no return value or no specific type exists
+* Curiosity is not distraction—it’s direction
+
+---
+
+## Status
+
+Day 5 logged
+Preparing for a structured 40-hour course next
+
+---
+
