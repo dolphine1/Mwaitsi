@@ -494,4 +494,153 @@ Day 5 logged
 Preparing for a structured 40-hour course next
 
 ---
+# Day 6 of ∞ — C++ Foundations (Revision & Context)
+
+## Overview
+
+Day 6 was less about learning something entirely new and more about **revisiting fundamentals with better context**. With prior exposure, concepts that once felt fragmented are now aligning. The explanations feel familiar, but better angled, clearer, and more intentional.
+
+This day focused on:
+
+* The historical context of programming and C++
+* Revisiting the first C++ program
+* Tooling decisions (Eclipse CDT vs VS Code)
+* Terminal basics inside a programming workflow
+* Understanding code line by line
+* Small but important details (`cin.get()`, streams, operators, compilation)
+
+Overall, this was **revision at a higher resolution**.
+
+---
+
+## Learning Resources
+
+* **Saylor Academy – C++ 40 hr Certification**
+* **Computer Architecture & Programming (CAP) YouTube**
+
+  * History of programming
+  * First C++ program
+  * Terminal basics (`cd`, `ls`, `cat`)
+  * Step-by-step code explanation
+
+Saylor.org/ stood out for being **streamlined**—most questions are answered on the same page, reducing unnecessary rabbit holes and saving time.
+
+---
+
+## Tooling & Environment
+
+* **IDE**: VS Code
+  *(Eclipse CDT setup was covered, but skipped for now due to system load.)*
+* **Compiler**: `g++`
+* **Terminal usage** integrated with coding (not just standalone commands)
+
+Using the terminal *within* the coding workflow made familiar commands feel more purposeful.
+
+---
+
+## Revisiting the First C++ Program
+
+```cpp
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    cout << "Hello World!" << endl;
+    cin.get();
+    return 0;
+}
+```
+
+### `#include <iostream>`
+
+* `#` indicates a **preprocessor directive**
+* `#include` copies the contents of the specified file into the source code before compilation
+* `<iostream>` stands for **input-output streams**
+* It provides access to `cin`, `cout`, and related stream functionality
+* Part of the **C++ Standard Library**
+
+This mechanism allows reuse of tested, standardized code without manual duplication.
+
+---
+
+## Understanding `cin.get()`
+
+This was a new line I hadn’t actively used before.
+
+### Observations after running the code:
+
+* Output prints normally
+* Program pauses until input is provided
+* Pressing **Enter** resumes execution and exits
+
+### Why it exists:
+
+* Prevents console auto-closure in some environments
+* Forces the program to wait for a single character input
+* Useful for beginner programs and debugging demos
+
+It reads one character from the input stream, effectively pausing execution.
+
+---
+
+## Streams: `cin` and `cout`
+
+* Pronounced **“see-in”** and **“see-out”**
+* Short for **character input** and **character output**
+* Operate using stream objects, not raw input/output
+
+This reinforced the idea that C++ I/O is **stream-based**, not function-call based like in C.
+
+---
+
+## Operators vs Dot Notation
+
+### Verdict (Doctrine of Least Surprise)
+
+* Use **dot notation** when the action isn’t mathematically obvious
+  → clearer, more readable, safer
+* Use **operator overloading** only when the symbol’s meaning is intuitive
+  → e.g. `+` for numbers, money, or complex values
+
+Most real-world code should favor **explicit method calls over clever symbols**.
+
+---
+
+## Compilation & Execution Insight
+
+* C++ is a **compiled language**
+* Source code is transformed into a **binary executable**
+* The executable is then **invoked** by the operating system
+
+This reinforces why C++ differs fundamentally from interpreted languages.
+
+---
+
+## Practice
+
+* Completed **3 exercises**
+* Solutions compiled with no errors
+* Code committed to the repository
+
+---
+
+## Reflection
+
+Today felt like **revision with clarity**:
+
+* Fewer rabbit holes
+* More structure
+* Better mental connections
+* Faster consumption without sacrificing understanding
+
+Exposure to new material is helping me:
+
+* Recognize what matters
+* Fill in missing gaps
+* Trust the learning curve
+
+Bit of a headache by the end but progress was solid.
+
+See you tomorrow.
 
